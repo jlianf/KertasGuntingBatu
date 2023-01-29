@@ -18,8 +18,9 @@ object Game {
     private val optionDrawable = mapOf(
         "ROCK" to R.drawable.ic_batu,
         "SCISSORS" to R.drawable.ic_gunting,
-        "PAPER" to R.drawable.ic_kertas
+        "PAPER" to R.drawable.ic_kertas,
     )
+
 
     fun randomOption() : String = options[Random.nextInt(0,3)]
 
