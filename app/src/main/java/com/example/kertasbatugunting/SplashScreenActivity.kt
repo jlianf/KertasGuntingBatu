@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import com.bumptech.glide.Glide
 import com.example.kertasbatugunting.databinding.ActivitySplashScreenBinding
+import com.example.kertasbatugunting.landingpage.LandingActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     private val binding : ActivitySplashScreenBinding by lazy{
@@ -17,10 +18,13 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val url = "https://i.ibb.co/HC5ZPgD/splash-screen1.png"
-        Glide.with(this).load(url).into(binding.SplashScreenImage)
+        Glide.with(this)
+            .load(url)
+            .centerCrop()
+            .into(binding.SplashScreenImage)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val i = Intent(this, MainActivity::class.java)
+            val i = Intent(this, LandingActivity::class.java)
             startActivity(i)
         }, 3000)
     }

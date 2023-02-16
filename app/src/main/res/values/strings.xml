@@ -12,4 +12,5 @@
     <string name="draw">DRAW</string>
     <string name="playerwin">PLAYER WIN</string>
     <string name="comwin">COM WIN</string>
+    <string name="text_landing_page_one">Bermain Suit Bersama Pemain</string>
 </resources>
