@@ -14,11 +14,14 @@ class LandingActivity: AppCompatActivity() {
         setContentView(binding.root)
 
         val landingFragmentOne = LandingPageOneFragmen()
+        val landingFragmentTwo = LandingPageTwoFragmen()
+
         val landingPageAdapter = LandingPagerAdapter(
             fragmentManager = supportFragmentManager,
-            landingFragmentOne
+            landingFragmentOne, landingFragmentTwo
         )
         binding.vpLanding.adapter = landingPageAdapter
+        binding.dotIndicator.attachTo(binding.vpLanding)
 
     }
 }
