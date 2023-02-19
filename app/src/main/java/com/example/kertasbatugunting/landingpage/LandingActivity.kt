@@ -15,10 +15,11 @@ class LandingActivity: AppCompatActivity() {
 
         val landingFragmentOne = LandingPageOneFragmen()
         val landingFragmentTwo = LandingPageTwoFragmen()
+        val landingFragmentTree = LandingPageTreeFragmen()
 
         val landingPageAdapter = LandingPagerAdapter(
             fragmentManager = supportFragmentManager,
-            landingFragmentOne, landingFragmentTwo
+            landingFragmentOne, landingFragmentTwo, landingFragmentTree
         )
         binding.vpLanding.adapter = landingPageAdapter
         binding.dotIndicator.attachTo(binding.vpLanding)
