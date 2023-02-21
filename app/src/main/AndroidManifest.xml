@@ -27,6 +27,7 @@
             android:exported="false"/>
 
         <activity android:name=".landingpage.LandingActivity"/>
+        <activity android:name=".Home"/>
     </application>
 
 </manifest>

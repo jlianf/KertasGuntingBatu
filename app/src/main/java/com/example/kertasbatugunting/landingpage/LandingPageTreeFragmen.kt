@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.kertasbatugunting.databinding.FragmentLandingPageTreeeBinding
 import com.example.kertasbatugunting.Home
 
+
 class LandingPageTreeFragmen : Fragment() {
     private var _binding : FragmentLandingPageTreeeBinding? = null
     private val binding get() = _binding!!
@@ -25,8 +26,8 @@ class LandingPageTreeFragmen : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnStartGame.setOnClickListener(){
-            val intent = Intent(activity, Home::class.java)
+        binding.btnStartGame.setOnClickListener{
+            val intent = Intent(getActivity(), Home::class.java)
             startActivity(intent)
         }
     }
